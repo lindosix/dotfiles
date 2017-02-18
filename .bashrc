@@ -54,7 +54,7 @@ fi
 
 # Change Caps to Esc
 xmodmap -e "clear Lock"
-xmodmap -e "keycode 66 = Escape NoSymbol Escape
+xmodmap -e "keycode 66 = Escape NoSymbol Escape"
 
 # Arch Linux locale settings
 export LANGUAGE=en_IE
