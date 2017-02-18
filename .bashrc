@@ -52,6 +52,10 @@ fi
 #--------------------------------------------------------------
 # Edits lindosix
 
+# Change Caps to Esc
+xmodmap -e "clear Lock"
+xmodmap -e "keycode 66 = Escape NoSymbol Escape
+
 # Arch Linux locale settings
 export LANGUAGE=en_IE
 export LANG=en_IE.UTF-8
@@ -72,10 +76,18 @@ alias syss='systemctl status'		#  systemctl status
 alias jr='journalctl'			#  systemctl
 alias jros='journalctl --since="1 sec ago"'	#  since 1 sec
 alias jrts='journalctl --since="10 sec ago"'	#  since 10 sec
-alias jros='journalctl --since="1 min ago"'	#  since 1 min
-alias jrts='journalctl --since="10 min ago"'	#  since 10 min
+alias jrom='journalctl --since="1 min ago"'	#  since 1 min
+alias jrtm='journalctl --since="10 min ago"'	#  since 10 min
 alias jrhh='journalctl --since="30 min ago"'	#  since half hour
 alias jroh='journalctl --since="60 min ago"'	#  since one hour
+alias jrhd='journalctl --since="12 hours ago"'	#  since 12 hours
+alias jrod='journalctl --since="24 hours ago"'	#  since one day
+alias jrow='journalctl --since="7 days ago"'	#  since one week
+
+# moving around  directories
+alias di='dirs -v'
+alias pu='pushd -n '
+alias po='popd -n '
 
 #--------------------------------------------------------------
 
